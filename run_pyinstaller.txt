@@ -1,0 +1,9 @@
+ #pyinstaller      --add-data "images;images"   --add-data "config;config"  --add-data "G6PD关系;G6PD关系" run_G6PD_Report.py --icon images/logo.ico   -w
+
+
+  pyinstaller      --add-data "images;images"  run_G6PD_Report.py --icon images/logo.ico   -w
+  cp config  ./dist/run_G6PD_Report -r 
+  cp G6PD关系  ./dist/run_G6PD_Report -r 
+cp  G6PD基因检测结果统计表2023.11.1.xlsx ./dist/run_G6PD_Report
+cp  images ./dist/run_G6PD_Report
+#cp report_template.docx ./dist/run_G6PD_Report
